@@ -13,6 +13,7 @@ model += 250 * x1 + 300 * x2 + 500 * x3 + 450 * x4 + 180 * x5
 model += 10 * x1 + 15 * x2 + 7 * x3 + 18 * x4 <= 77
 model += 9 * x1 + 13 * x2 + 20 * x5 <= 80
 model += x1 + x2 + x3 + x4 + x5 <= 40
+print()
 
 status = model.solve()
 print(p.LpStatus[status])
